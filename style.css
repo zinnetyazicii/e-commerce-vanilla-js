@@ -78,3 +78,52 @@
   height: 400px;
    
 }
+.fos{
+  font-family: "Open Sans", sans-serif;
+}
+
+.gray{
+  color: var(--gray);
+}
+.black{
+  color: var(--black);
+}
+.purple{
+  color: var(--purple);
+}
+.book_star_rate .bi-star-fill,.bi-star-half,.bi-star{
+  color:#eeedf5;
+  font-size:1.2rem;
+  margin-right: 5px;
+
+}
+.book_star_rate .bi-star-half,.bi-star-fill.active{
+  color:#f2c94c;
+  font-size:1.2rem;
+  margin-right: 5px;
+
+}
+.book_desciription{
+  display:-webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+
+}
+.btn_purple{
+  cursor: pointer;
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+  transition: all 250 ms ease-in-out;
+
+}
+.btn_purple:hover{
+  color:white;
+  background-color: var(--purple);
+
+}
