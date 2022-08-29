@@ -112,6 +112,10 @@
 
 
 }
+.old_price{
+  text-decoration: line-through;
+  color: #bdbdbd
+}
 .btn_purple{
   cursor: pointer;
   border: 2px solid var(--purple);
@@ -120,6 +124,8 @@
   font-weight: bold;
   background-color: transparent;
   transition: all 250 ms ease-in-out;
+  display:flex;
+  justify-content:space-between;
 
 }
 .btn_purple:hover{
