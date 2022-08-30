@@ -250,15 +250,19 @@
 
 .basket_list {
   list-style-type: none;
-  padding: 0 5px;
+  padding: 0 10px;
+  margin-top: 3rem;
+  max-height: 650px;
+  overflow-y: auto;
 
 }
 
-.basket_list li {
+.basket_item {
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom:2rem;
 
 }
 .basket_item_info{
@@ -281,9 +285,31 @@
   font-weight: bold;
   color: var(--black);
 
+}
+
+.book_count .increase{
+  margin-left: 5px;
+
+}
+.book_count .descrease{
+  margin-right: 5px;
 
 }
 .book_count .increase,.descrease{
   cursor: pointer;
   color: var(--purple);
+}
+.basket_total{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 5%;
+  align-items: center;
+  width:inherit;
+
+
+}
+.baske.basket_total button{
+  width: 250px;
+
 }
