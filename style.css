@@ -157,9 +157,10 @@
   width: 600px;
   height: 900px;
   background-color: #dddada;
-  z-index:-1;
+  z-index: -1;
 }
-.filter{
+
+.filter {
   position: absolute;
   list-style-type: none;
   display: flex;
@@ -168,6 +169,7 @@
   justify-content: center;
 
 }
+
 .filter li {
   color: var(--gray);
   font-size: 1rem;
@@ -175,20 +177,23 @@
   cursor: pointer;
   position: relative;
 }
+
 .filter li:hover {
   color: var(--purple);
- 
 
-  
+
+
 }
+
 .filter li.active {
   color: var(--purple);
   font-size: 1.5rem;
   font-weight: bold;
 
 }
+
 .filter li.active::before {
-  content:"";
+  content: "";
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -198,9 +203,64 @@
   position: absolute;
   left: -15px;
   margin-top: 10px;
-  
+
 }
-.store{
- width: 80%;
- margin-left: 10%;
+
+.store {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.basket_modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #5c6a7950;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+}
+
+.basket_items {
+  width: 450px;
+  background-color: white;
+  height: 100%;
+  float: right;
+
+
+}
+
+.basket_items.bi-x {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 3rem;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.basket_title {
+  color: #1c2a39;
+  margin-top: 5rem;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.basket_list {
+  list-style-type: none;
+  padding: 0 5px;
+
+}
+
+.basket_list li {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.basket_item_info{
+  width: 250px;
 }
