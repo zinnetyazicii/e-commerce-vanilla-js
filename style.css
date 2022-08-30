@@ -264,3 +264,26 @@
 .basket_item_info{
   width: 250px;
 }
+.basket_item_info .book_name{
+  font-size: 16px;
+
+}
+.basket_item_info .book_price{
+  font-size: 16px;
+}
+.basket_item_info .book_remove{
+  cursor: pointer;
+  color: var(--gray);
+  font-size: 16px;
+}
+.basket_item_info .book_count{
+  font-size:1.5rem;
+  font-weight: bold;
+  color: var(--black);
+
+
+}
+.book_count .increase,.descrease{
+  cursor: pointer;
+  color: var(--purple);
+}
