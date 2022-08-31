@@ -2,9 +2,9 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="UTF-8">
-  <title>T-rex Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yazılım Mektebi | Kitap Mağazası</title>
   </link>
   <script src="app.js" charset="utf-8"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,12 +13,13 @@
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
   <nav class="navbar">
-    <h2 class="title">Bookshop</h2>
+    <h2 class="title" >Bookshop</h2>
     <ul class="menu">
       <li class="active">Books</li>
       <li>AUDIOBOOKS</li>
@@ -28,7 +29,10 @@
     <ul class="menu__icons">
       <li><i class="bi bi-person"></i></li>
       <li><i class="bi bi-search"></i></li>
-      <li class="basket_icon"><i class="bi bi-bag"></i><span class="basket_count">2</span></li>
+      <li class="basket_icon" onclick="toggleModal()" >
+        <i class="bi bi-bag"></i>
+        <span class="basket_count">2</span>
+      </li>
     </ul>
   </nav>
   <section class="slider">
@@ -275,7 +279,7 @@
 
   <div class="basket_modal">
     <div class="basket_items">
-      <i class="bi bi-x  fs-2"></i>
+      <i class="bi bi-x fs-2" onclick="toggleModal()" ></i>
       <h2 class="basket_title">Your Items</h2>
       <ul class="basket_list">
         <li class="basket_item">
@@ -324,8 +328,13 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+  <script
+      type="text/javascript"
+      src="assets/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script src="./assets/jquery/jquery.min.js"></script>
+    <script src="./assets/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 
 </body>
 
